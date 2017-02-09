@@ -1,7 +1,7 @@
 
 class Menu extends React.Component {
     render() {
-        let menus = ["Home", 'About', 'Servces', 'Career', 'Contact Us'];
+        let menus = ["Home", 'About', 'Services', 'Career', 'Contact Us'];
         return (
             <div>
                 {menus.map(function (value, idx) {
@@ -18,7 +18,7 @@ class Menu extends React.Component {
 
 class Link extends React.Component {
     render() {
-        const url = this.props.label.toLowerCase().replace(' ', '-')+'.html';
+        const url = "pages/" + this.props.label.toLowerCase().replace(' ', '-')+'.html';
         return (
             <div>
                 <a href={url}>
